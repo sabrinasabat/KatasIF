@@ -1,0 +1,19 @@
+public class FizzBuzz {
+    public static int[] solution(int number) {
+
+        int a = 0, b = 0, c = 0;
+
+        for(int i = 1; i<number; i++){
+            if(i%3==0 &&(i%5!=0)){
+                a++;
+            }
+            if(i%5==0 && (i%3!=0)){
+                b++;
+            }
+            if(i%5==0 && i%3==0){
+                c++;
+            }
+        }
+        return new int[] {a,b,c};
+    }
+}
